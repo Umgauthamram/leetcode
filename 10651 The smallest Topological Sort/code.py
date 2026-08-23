@@ -21,19 +21,19 @@ def eventualSafeNodes():
         indegree[u] += 1
 
   queue = deque([i for i in range(n) if indegree[i] == 0])
-  safe_nodes = []
+  safe = []
   
   while queue:
     node = queue.popleft()
-    safe_nodes.append(node)
+    safe.append(node)
 
     for neighbor in reversedadj[node]:
       indegree[neighbor] -= 1
       if indegree[neighbor] == 0:
         queue.append(neighbor)
 
-  safe_nodes.sort()
-  print(*(safe_nodes))
+  safe.sort()
+  print(*(safe))
 
 
 if __name__ == "__main__":
