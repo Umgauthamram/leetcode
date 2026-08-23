@@ -27,10 +27,10 @@ def eventualSafeNodes():
     node = queue.popleft()
     safe.append(node)
 
-    for neighbor in reversedadj[node]:
-      indegree[neighbor] -= 1
-      if indegree[neighbor] == 0:
-        queue.append(neighbor)
+    for y in reversedadj[node]:
+      indegree[y] -= 1
+      if indegree[y] == 0:
+        queue.append(y)
 
   safe.sort()
   print(*(safe))
