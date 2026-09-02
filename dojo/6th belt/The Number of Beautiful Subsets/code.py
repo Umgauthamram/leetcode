@@ -1,3 +1,12 @@
+# LeetCode 2597
+# input
+# 3 2
+# 2 4 6
+
+# output
+#4
+
+
 from collections import defaultdict
 from typing import List
 
@@ -28,9 +37,3 @@ if __name__ == "__main__":
     print(result)
 
 
-# input
-# 3 2
-# 2 4 6
-
-# output
-#4
