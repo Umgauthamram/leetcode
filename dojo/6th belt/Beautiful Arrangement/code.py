@@ -10,7 +10,6 @@ def countArrangement(n):
     visited = [False] * (n + 1)
     
     def backtrack(index):
-        
         if index>n:
             return 1
 
